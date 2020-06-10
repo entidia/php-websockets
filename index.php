@@ -22,7 +22,7 @@
 	}
 
 	$(document).ready(function(){
-		var websocket = new WebSocket("ws://agentv-socket.azurewebsites.net:443/php-socket.php"); 
+		var websocket = new WebSocket("wss://agentv-socket.azurewebsites.net:443/php-socket.php"); 
 		websocket.onopen = function(event) { 
 			showMessage("<div class='chat-connection-ack'>Connection is established!</div>");		
 		}
